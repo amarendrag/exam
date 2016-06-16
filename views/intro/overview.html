@@ -1,0 +1,27 @@
+
+
+<div class="container">
+  <h2>Table</h2>
+   <div class="table-responsive">
+  <table  ng-table="vm.tableParams"  class="table table-bordered" show-filter="true">
+   
+       <tr ng-repeat="user in $data">
+                    <td title="'Id'" filter="{ id: 'number'}" sortable="'id'">
+                        {{user.id}}
+                    </td>
+                    <td title="'userId'" filter="{ userId: 'number'}" sortable="'userId'">
+                        {{user.userId}}
+                    </td>
+			<td title="'Title'" filter="{ title: 'text'}" sortable="'title'">
+						{{user.title}}
+					    </td>
+			<td title="'Body'" filter="{ body: 'text'}" sortable="'body'">
+						{{user.body}}
+					    </td>
+                </tr>
+
+  </table>
+  </div>
+</div>
+
+
